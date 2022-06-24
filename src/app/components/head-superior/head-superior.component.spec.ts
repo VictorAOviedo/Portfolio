@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { RedesSocialesComponent } from './redes-sociales.component';
+import { HeadSuperiorComponent } from './head-superior.component';
 
-describe('RedesSocialesComponent', () => {
-  let component: RedesSocialesComponent;
-  let fixture: ComponentFixture<RedesSocialesComponent>;
+describe('HeadSuperiorComponent', () => {
+  let component: HeadSuperiorComponent;
+  let fixture: ComponentFixture<HeadSuperiorComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ RedesSocialesComponent ]
+      declarations: [ HeadSuperiorComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(RedesSocialesComponent);
+    fixture = TestBed.createComponent(HeadSuperiorComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
