@@ -1,0 +1,9 @@
+.row{
+    padding: 20px;
+    border: solid;
+    margin: 20px;
+}
+.titulo{
+    font-family: 'Righteous', cursive;
+    padding: 20px;
+}

@@ -1,34 +1,40 @@
 .row{
-    padding: 30px;
-}
-
-#foto-perfil{
+    padding: 20px;
+    border: solid;
+    margin: 20px;
     border-radius: 0px 50px 0px 50px;
-    border: 3px solid;
-    position:relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);  
+    box-shadow: 1px 1px 20px 2px
 }
-
+#foto-perfil{
+    width: 60%;
+    border: solid;
+    margin: 20px;
+    border-radius: 0 50px 0 50px;
+    box-shadow: 1px 1px 20px 2px
+}
 h3{
-    text-shadow: 5px 5px 5px blue;
+    font-family: 'Secular One', sans-serif;
+}
+.titulo{
+    font-family: 'Righteous', cursive;
+}
+#imagen-developer{
+    width: 60%;
+    float: right;
+    margin: 30px 70px 30px 0;
 }
 
-#nombre-titulo{
-    margin-top: auto;
-    margin-bottom: auto;
-    text-align: center;
+/*id "tarjeta" hace referencia a foto de perfil + nombre + profesion*/
+#tarjeta{
+    position: relative;
+    bottom: 150px;
 }
 
-#acerca-de-mi{
-    margin-top: auto;
-    margin-bottom: auto;
-    text-align: justify;
-}
-
-@media (min-width: 576px){
-    #nombre-titulo{
-        margin-top: 80px;
+@media (max-width: 767px){
+    #tarjeta{
+        bottom: 0;
+    }
+    #foto-perfil{
+        border-radius: 50%;
     }
 }

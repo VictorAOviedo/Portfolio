@@ -2,17 +2,26 @@
     display: flex;
     align-items: center;
 }
-
 #logo-AP{
-    width: 90%;
-    height: auto;
-    float: left;
+    width: 30%;
 }
-
 .redes-sociales{
     width: 10%;
-    height: auto;
     float: right;
     border-radius: 100%;
-    padding: 1%;
+    padding: 3px;
+}
+#login{
+    text-align: center;
+}
+@media (max-width: 650px){
+    #logo-AP{
+        width: 100%;
+    }
+    .redes-sociales{
+        width: 25%;
+    }
+    #login{
+        float: left;
+    }
 }
