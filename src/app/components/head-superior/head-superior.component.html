@@ -9,6 +9,7 @@
                 <a href=""><img src="../../../assets/1linkedin.png" class="redes-sociales" alt="imagenLinkedin"></a>
         </div>
         <div class="col-2" id="login">
-                        <button type="button" class="btn btn-light"><a>Login</a></button>   
+                        <button type="button" class="btn btn-light" (click)="login()" *ngIf="!isLogged"><a>Login</a></button>
+                        <button type="button" class="btn btn-light" (click)="onLogOut()" *ngIf="isLogged"><a>Cerrar Sesión</a></button>
         </div>
 </div>
