@@ -1,13 +1,17 @@
-.row{
+.areaEducacion{
     padding: 20px;
     border: solid;
     margin: 20px;
     border-radius: 0px 50px 0px 50px;
     box-shadow: 1px 1px 20px 2px
 }
-h1, h3{
-    display: inline;
-}
-.titulo{
+
+.areaEducacion-titulo{
     font-family: 'Righteous', cursive;
+}
+
+.botonesEdicionEliminar{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
