@@ -1,21 +1,33 @@
 <div class="container">
-    <div class="row">
-        <div>
+    <div class="row justify-content-center">
+        <div class="formulario">
             <form (ngSubmit)="onCreate()" novalidate #f="ngForm">
                 <div class="form-group">
-                    <label for="nombreEdu">Nombre de la educacion</label>
-                    <input type="text" class="form-control" id="nombreEdu" name="nombreEdu" [(ngModel)]="nombreEdu" required>
+                    <label for="nombreEdu">
+                        <h3>Nombre de la educación</h3>
+                    </label>
+                    <input type="text" class="form-control" id="nombreEdu" name="nombreEdu"
+                        placeholder="Nombre de la educación" [(ngModel)]="nombreEdu" required>
+                </div>
+                <div class="form-group col-9 col-sm-3 col-md-3 col-lg3 col-xl-3 col-xxl-3">
+                    <label for="fechaEdu">
+                        <h3>Fecha</h3>
+                    </label>
+                    <input type="date" class="form-control" id="fechaEdu" name="fechaEdu" [(ngModel)]="fechaEdu"
+                        required>
                 </div>
                 <div class="form-group">
-                    <label for="fechaEdu">Fecha</label>
-                    <input type="date" class="form-control" id="fechaEdu" name="fechaEdu" [(ngModel)]="fechaEdu" required>
+                    <label for="descripcionEdu">
+                        <h3>Descripción</h3>
+                    </label>
+                    <textarea class="form-control" id="descripcionEdu" name="descripcionEdu" placeholder="Descripción"
+                        rows="7" [(ngModel)]="descripcionEdu" required></textarea>
                 </div>
-                <div class="form-group">
-                    <label for="descripcionEdu">Descripción</label>
-                    <input type="text" class="form-control" id="descripcionEdu" name="descripcionEdu" [(ngModel)]="descripcionEdu" required>
-                </div>
-                <button class="btn btn-primary">
+                <button class="btn btn-success">
                     Agregar Educacion
+                </button>
+                <button class="btn btn-danger" routerLink="">
+                    Cancelar
                 </button>
             </form>
         </div>

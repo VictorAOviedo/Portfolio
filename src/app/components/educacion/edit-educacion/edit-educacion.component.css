@@ -1,0 +1,17 @@
+.formulario{
+    padding: 10rem;
+ }
+ 
+ .form-group{
+     margin: 1rem 0;
+ }
+ 
+ button{
+     margin: 2px;
+ }
+ 
+ @media (max-width: 768px){
+     .formulario{
+         padding: 15px;
+      }
+ }
