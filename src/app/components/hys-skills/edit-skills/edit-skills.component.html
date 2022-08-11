@@ -1,0 +1,35 @@
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="formulario">
+            <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
+                <div class="form-group">
+                    <label for="nombreSkills">
+                        <h3>Nombre de Hard & Soft Skills</h3>
+                    </label>
+                    <input type="text" class="form-control" id="nombreSkills" name="nombreSkills"
+                        placeholder="Nombre de Hard & Soft Skills" [(ngModel)]="skll.nombreSkills" required>
+                </div>
+                <div class="form-group col-9 col-sm-3 col-md-3 col-lg3 col-xl-3 col-xxl-3">
+                    <label for="imagenSkills">
+                        <h3>Imagen</h3>
+                    </label>
+                    <input type="text" class="form-control" id="imagenSkills" name="imagenSkills" [(ngModel)]="skll.imagenSkills"
+                        required>
+                </div>
+                <div class="form-group">
+                    <label for="porcentajeSkills">
+                        <h3>Porcentaje</h3>
+                    </label>
+                    <input class="form-control" id="porcentajeSkills" name="porcentajeSkills" placeholder="%"
+                        rows="7" [(ngModel)]="skll.porcentajeSkills" required>
+                </div>
+                <button class="btn btn-success">
+                    Actualizar
+                </button>
+                <button class="btn btn-danger" routerLink="">
+                    Cancelar
+                </button>
+            </form>
+        </div>
+    </div>
+</div>

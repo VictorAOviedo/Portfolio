@@ -1,0 +1,35 @@
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="formulario">
+            <form (ngSubmit)="onCreate()" novalidate #f="ngForm">
+                <div class="form-group">
+                    <label for="nombreSkill">
+                        <h3>Nombre Hard & Soft Skills</h3>
+                    </label>
+                    <input type="text" class="form-control" id="nombreSkill" name="nombreSkill"
+                        placeholder="Nombre de Hard & Soft Skills" [(ngModel)]="nombreSkills" required>
+                </div>
+                <div class="form-group col-9 col-sm-3 col-md-3 col-lg3 col-xl-3 col-xxl-3">
+                    <label for="fotoSkill">
+                        <h3>Imagen</h3>
+                    </label>
+                    <input type="text" class="form-control" id="fotoSkill" name="fotoSkill" [(ngModel)]="imagenSkills"
+                        required>
+                </div>
+                <div class="form-group">
+                    <label for="porcentajeSkill">
+                        <h3>Porcentaje</h3>
+                    </label>
+                    <input class="form-control" id="porcentajeSkill" name="porcentajeSkill" placeholder="%"
+                        rows="7" [(ngModel)]="porcentajeSkills" required>
+                </div>
+                <button class="btn btn-success">
+                    Agregar Hard & Soft Skills
+                </button>
+                <button class="btn btn-danger" routerLink="">
+                    Cancelar
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
