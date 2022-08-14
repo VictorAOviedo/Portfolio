@@ -6,16 +6,16 @@
     box-shadow: 1px 1px 20px 2px
 }
 
-.areaExperiencia-titulo{
+.areaExperiencia__titulo{
     font-family: 'Righteous', cursive;
 }
 
-.areaExperiencia-botonesEdicionEliminar{
+.areaExperiencia__item{
+    margin: 1rem 0;
+}
+
+.areaExperiencia__item__botonesEditarEliminar{
     display: flex;
     justify-content: flex-end;
     align-items: center;
-}
-
-.areaExperiencia-item{
-    margin: 1rem 0;
 }

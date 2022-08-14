@@ -2,26 +2,30 @@
     display: flex;
     align-items: center;
 }
-#logo-AP{
+
+.navegacion__logoAP{
     width: 30%;
 }
-.redes-sociales{
+
+.navegacion__redesSociales{
     width: 10%;
     float: right;
     border-radius: 100%;
     padding: 3px;
 }
-#login{
+
+.navegacion__login{
     text-align: center;
 }
+
 @media (max-width: 650px){
-    #logo-AP{
+    .navegacion__logoAP{
         width: 100%;
     }
-    .redes-sociales{
+    .navegacion__redesSociales{
         width: 25%;
     }
-    #login{
+    .navegacion__login{
         float: left;
     }
 }

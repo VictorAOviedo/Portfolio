@@ -1,10 +1,21 @@
-.row{
+.areaProyecto{
     padding: 20px;
     border: solid;
     margin: 20px;
-    background: white;
+    border-radius: 0px 50px 0px 50px;
+    box-shadow: 1px 1px 20px 2px
 }
-.titulo{
+
+.areaProyecto__titulo{
     font-family: 'Righteous', cursive;
-    padding: 20px;
+}
+
+.areaProyecto__item{
+    margin: 1rem 0;
+}
+
+.areaProyecto__item__botonesEditarEliminar{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }

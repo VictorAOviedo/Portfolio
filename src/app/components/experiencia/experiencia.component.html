@@ -1,12 +1,12 @@
 <div class="areaExperiencia">
-    <h1 class="areaExperiencia-titulo">Experiencia Laboral</h1>
+    <h1 class="areaExperiencia__titulo">Experiencia Laboral</h1>
     <div class="col-lg-2">
         <!-- boton Nueva Experiencia -->
         <button type="button" class="btn btn-info" routerLink="/nuevaexp" *ngIf="isLogged">
             Nueva Experiencia
         </button>
     </div>
-    <div class="row border-bottom areaExperiencia-item" *ngFor="let Experiencia of experiencia">
+    <div class="row border-bottom areaExperiencia__item" *ngFor="let Experiencia of experiencia">
         <div class="col col-md-3 col-lg-3 col-xl-3 col-xxl-3">
             <h3>{{Experiencia.nombreExp}}</h3>
             <h5>{{Experiencia.fechaExp}}</h5>
@@ -15,7 +15,7 @@
         <div class="col">
             {{Experiencia.descripcionExp}}
         </div>
-        <div class="col col-md-2 col-lg-2 col-xl-2 col-xxl-2 areaExperiencia-botonesEdicionEliminar" *ngIf="isLogged">
+        <div class="col col-md-2 col-lg-2 col-xl-2 col-xxl-2 areaExperiencia__item__botonesEditarEliminar" *ngIf="isLogged">
             <!-- boton Editar -->
             <button class="btn btn-success" routerLink="/editexp/{{Experiencia.id}}">
                 <i class="bi bi-pen"></i>
