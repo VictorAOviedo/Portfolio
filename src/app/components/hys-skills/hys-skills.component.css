@@ -1,14 +1,21 @@
-.row{
+.areaHySS{
     padding: 20px;
     border: solid;
     margin: 20px;
     border-radius: 0px 50px 0px 50px;
     box-shadow: 1px 1px 20px 2px
 }
-.titulo{
+
+.areaHySS-titulo{
     font-family: 'Righteous', cursive;
-    padding: 20px;
 }
+
+.areaHySS-botonesEditarEliminar{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
 p{
     font-family: 'Secular One', sans-serif;
     font-size: 25px;
