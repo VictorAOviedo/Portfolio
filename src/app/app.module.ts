@@ -22,6 +22,8 @@ import { NewEducacionComponent } from './components/educacion/new-educacion/new-
 import { EditEducacionComponent } from './components/educacion/edit-educacion/edit-educacion.component';
 import { NewSkillsComponent } from './components/hys-skills/new-skills/new-skills.component';
 import { EditSkillsComponent } from './components/hys-skills/edit-skills/edit-skills.component';
+import { NewProyectoComponent } from './components/proyectos/new-proyecto/new-proyecto.component';
+import { EditProyectoComponent } from './components/proyectos/edit-proyecto/edit-proyecto.component';
 
 
 @NgModule({
@@ -44,6 +46,8 @@ import { EditSkillsComponent } from './components/hys-skills/edit-skills/edit-sk
     EditEducacionComponent,
     NewSkillsComponent,
     EditSkillsComponent,
+    NewProyectoComponent,
+    EditProyectoComponent,
   ],
   imports: [
     BrowserModule,
