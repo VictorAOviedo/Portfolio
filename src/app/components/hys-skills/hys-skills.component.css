@@ -6,11 +6,11 @@
     box-shadow: 1px 1px 20px 2px
 }
 
-.areaHySS-titulo{
+.areaHySS__titulo{
     font-family: 'Righteous', cursive;
 }
 
-.areaHySS-botonesEditarEliminar{
+.areaHySS__botonesEditarEliminar{
     display: flex;
     justify-content: flex-end;
     align-items: center;

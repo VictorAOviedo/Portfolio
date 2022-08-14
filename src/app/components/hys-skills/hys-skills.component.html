@@ -1,5 +1,5 @@
 <div class="areaHySS">
-    <h1 class="areaHySS-titulo">Hard & Soft Skills</h1>
+    <h1 class="areaHySS__titulo">Hard & Soft Skills</h1>
     <div class="col-lg-2">
         <!-- boton Nueva Hard & Soft Skills -->
         <button type="button" class="btn btn-info" routerLink="/nuevaskills" *ngIf="isLogged">
@@ -9,7 +9,7 @@
     <div class="row">
         <div *ngFor="let Skills of skills">
             <div class="row">
-                <div class="areaHySS-nombreSkills col col-md-4 d-flex justify-content-center">
+                <div class="areaHySS__nombreSkills col col-md-4 d-flex justify-content-center">
                     <p>{{ Skills.nombreSkills }}</p>
                 </div>
 
@@ -22,7 +22,7 @@
                     </circle-progress>
                 </div>
 
-                <div class="areaHySS-botonesEditarEliminar col d-flex justify-content-start" *ngIf="isLogged">
+                <div class="areaHySS__botonesEditarEliminar col d-flex justify-content-start" *ngIf="isLogged">
                     <!-- boton Editar -->
                     <button class="btn btn-success" routerLink="/editskills/{{Skills.id}}">
                         <i class="bi bi-pen"></i>
