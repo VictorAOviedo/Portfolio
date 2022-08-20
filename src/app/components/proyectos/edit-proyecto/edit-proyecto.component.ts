@@ -26,6 +26,7 @@ export class EditProyectoComponent implements OnInit {
   onUpdate(): void{
     const id = this.activatedRouter.snapshot.params['id'];
     this.proyectoS.update(id, this.pro).subscribe(data =>{
+      alert("Proyecto actualizado")
       this.router.navigate(['']);
     }, err =>{
       alert('Error al modificar proyecto');

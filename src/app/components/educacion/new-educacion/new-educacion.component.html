@@ -13,7 +13,7 @@
                     <label for="fechaEdu">
                         <h3>Fecha</h3>
                     </label>
-                    <input type="date" class="form-control" id="fechaEdu" name="fechaEdu" [(ngModel)]="fechaEdu"
+                    <input type="month" class="form-control" id="fechaEdu" name="fechaEdu" [(ngModel)]="fechaEdu"
                         required>
                 </div>
                 <div class="form-group">
@@ -23,10 +23,10 @@
                     <textarea class="form-control" id="descripcionEdu" name="descripcionEdu" placeholder="Descripción"
                         rows="7" [(ngModel)]="descripcionEdu" required></textarea>
                 </div>
-                <button class="btn btn-success">
+                <button type="submit" class="btn btn-success">
                     Agregar Educacion
                 </button>
-                <button class="btn btn-danger" routerLink="">
+                <button type="button" class="btn btn-danger" routerLink="">
                     Cancelar
                 </button>
             </form>

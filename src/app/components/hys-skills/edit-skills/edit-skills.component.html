@@ -13,20 +13,34 @@
                     <label for="imagenSkills">
                         <h3>Imagen</h3>
                     </label>
-                    <input type="url" class="form-control" id="imagenSkills" name="imagenSkills" [(ngModel)]="skll.imagenSkills"
-                        required>
+                    <input type="url" class="form-control" id="imagenSkills" name="imagenSkills"
+                        placeholder="URL de imagen" [(ngModel)]="skll.imagenSkills" required>
                 </div>
                 <div class="form-group col-9 col-sm-3 col-md-3 col-lg3 col-xl-3 col-xxl-3">
                     <label for="porcentajeSkills">
                         <h3>Porcentaje</h3>
                     </label>
-                    <input type="number" class="form-control" id="porcentajeSkills" name="porcentajeSkills" placeholder="0-100" min="0" max="100"
-                        rows="7" [(ngModel)]="skll.porcentajeSkills" required>
+                    <input type="number" class="form-control" id="porcentajeSkills" name="porcentajeSkills" min="0"
+                        max="100" rows="7" [(ngModel)]="skll.porcentajeSkills" required>
                 </div>
-                <button class="btn btn-success">
+                <div class="form-group col-9 col-sm-3 col-md-3 col-lg3 col-xl-3 col-xxl-3">
+                    <label for="colorPrimarioSkills">
+                        <h3>Color Primario</h3>
+                    </label>
+                    <input type="color" class="form-control form-control-color" id="colorPrimarioSkills"
+                        name="colorPrimarioSkills" [(ngModel)]="skll.colorPrimarioSkills" required>
+                </div>
+                <div class="form-group">
+                    <label for="colorSecundarioSkills">
+                        <h3>Color Secundario</h3>
+                    </label>
+                    <input type="color" class="form-control form-control-color" id="colorSecundarioSkills"
+                        name="colorSecundarioSkills" [(ngModel)]="skll.colorSecundarioSkills" required>
+                </div>
+                <button type="submit" class="btn btn-success">
                     Actualizar
                 </button>
-                <button class="btn btn-danger" routerLink="">
+                <button type="button" class="btn btn-danger" routerLink="">
                     Cancelar
                 </button>
             </form>

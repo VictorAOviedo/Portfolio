@@ -12,6 +12,7 @@
     float: right;
     border-radius: 100%;
     padding: 3px;
+    transition: width .5s;
 }
 
 .navegacion__login{
@@ -27,5 +28,11 @@
     }
     .navegacion__login{
         float: left;
+    }
+}
+
+@media (min-width: 768px){
+    .navegacion__redesSociales:hover{
+        width: 12%;
     }
 }

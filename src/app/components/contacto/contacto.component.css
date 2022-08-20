@@ -1,0 +1,23 @@
+.header {
+    /* color: #36A0FF; */
+    padding: 10px;
+}
+
+legend{
+    font-family: 'Righteous', cursive;
+}
+
+span {
+    font-size: 1rem;
+    color: #212529
+}
+
+img{
+    width: 50%;
+}
+
+@media (min-width: 992px){
+    span{
+        font-size: 2rem;
+    }
+}

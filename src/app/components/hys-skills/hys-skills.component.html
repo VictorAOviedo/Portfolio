@@ -13,11 +13,11 @@
                     <p>{{ Skills.nombreSkills }}</p>
                 </div>
 
-                <div class="col col-md-4 col-lg-4 col-xl-2 col-xxl-2 d-flex justify-content-start">
+                <div class="col col-md-4 col-lg-4 col-xl-4 col-xxl-2 d-flex justify-content-start">
 
                     <circle-progress [percent]="Skills.porcentajeSkills" [radius]="90" [imageSrc]="Skills.imagenSkills"
                         [showImage]="true" [imageWidth]="100" [imageHeight]="100" [outerStrokeWidth]="16"
-                        [innerStrokeWidth]="8" [outerStrokeColor]="'#e44d25'" [innerStrokeColor]="'#f2a48c'"
+                        [innerStrokeWidth]="8" [outerStrokeColor]="Skills.colorPrimarioSkills" [innerStrokeColor]="Skills.colorSecundarioSkills"
                         [animation]="true" [animationDuration]="1200">
                     </circle-progress>
                 </div>

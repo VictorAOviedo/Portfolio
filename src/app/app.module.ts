@@ -24,6 +24,8 @@ import { NewSkillsComponent } from './components/hys-skills/new-skills/new-skill
 import { EditSkillsComponent } from './components/hys-skills/edit-skills/edit-skills.component';
 import { NewProyectoComponent } from './components/proyectos/new-proyecto/new-proyecto.component';
 import { EditProyectoComponent } from './components/proyectos/edit-proyecto/edit-proyecto.component';
+import { ContactoComponent } from './components/contacto/contacto.component';
+import { interceptorProvider } from './service/interteptor-service';
 
 
 @NgModule({
@@ -48,6 +50,7 @@ import { EditProyectoComponent } from './components/proyectos/edit-proyecto/edit
     EditSkillsComponent,
     NewProyectoComponent,
     EditProyectoComponent,
+    ContactoComponent,
   ],
   imports: [
     BrowserModule,
@@ -56,7 +59,7 @@ import { EditProyectoComponent } from './components/proyectos/edit-proyecto/edit
     HttpClientModule,
     FormsModule
   ],
-  providers: [],
+  providers: [interceptorProvider],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

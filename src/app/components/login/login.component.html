@@ -7,7 +7,7 @@
           </div>                  
           <div class="d-flex align-items-center px-5 ms-xl-4 mt-5 pt-5 pt-xl-0 mt-xl-n5"> 
             <form #f="ngForm" (ngSubmit)="onLogin()" novalidate style="width: 23rem;">
-              <h3 class="fw-normal mb-3 pb-3 fw-bold" style="letter-spacing: 1px;">Iniciar Sesión</h3>
+              <h1>Iniciar Sesión</h1>
   
               <div class="form-outline mb-4">
                 <input type="user" id="nombreUsuario" name="nombreUsuario" class="form-control form-control-lg" [(ngModel)]="nombreUsuario" name="nombreUsuario" required/>
@@ -21,6 +21,7 @@
   
               <div class="pt-1 mb-4 center botonIniciarSesion">
                 <button class="btn btn-dark" type="submit">Inicia Sesión</button>
+                <button class="btn btn-danger" type="button" routerLink="">Cancelar</button>
               </div>
   
               <!--<p class="small mb-5 pb-lg-2"><a class="text-muted" href="#!">Forgot password?</a></p>-->
@@ -29,7 +30,7 @@
           </div>  
         </div>
         <div class="col-sm-6 px-0 d-none d-sm-block">
-          <img src="../../../assets/banner2.jpg"
+          <img src="../../../assets/banner22.jpg"
             alt="Login image" class="w-100 vh-100" style="object-fit: cover; object-position: left;">
         </div>
       </div>

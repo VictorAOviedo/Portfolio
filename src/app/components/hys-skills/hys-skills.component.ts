@@ -31,6 +31,7 @@ export class HysSkillsComponent implements OnInit {
   delete(id?: number) {
     if (id != undefined) {
       this.skillsS.delete(id).subscribe(data => {
+        alert("Hard & Soft Skills eliminado")
         this.cargarSkills();
       }, err => {
         alert("No se pudo borrar Hard & Soft Skills");

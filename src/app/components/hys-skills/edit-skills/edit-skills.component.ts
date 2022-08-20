@@ -26,6 +26,7 @@ export class EditSkillsComponent implements OnInit {
   onUpdate(): void{
     const id = this.activatedRouter.snapshot.params['id'];
     this.skillsS.update(id, this.skll).subscribe(data =>{
+      alert("Hard & Soft Skills actualizado")
       this.router.navigate(['']);
     }, err =>{
       alert('Error al modificar Hard & Soft Skills');

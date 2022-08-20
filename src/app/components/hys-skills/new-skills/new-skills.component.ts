@@ -12,6 +12,8 @@ export class NewSkillsComponent implements OnInit {
   nombreSkills: string = '';
   imagenSkills: string = '';
   porcentajeSkills: number = 0;
+  colorPrimarioSkills: string = '';
+  colorSecundarioSkills: string = '';
 
   constructor(private skillsS: SkillsSService, private router: Router) { }
 
@@ -19,7 +21,7 @@ export class NewSkillsComponent implements OnInit {
   }
 
   onCreate(): void{
-    const skll = new Skills(this.nombreSkills, this.imagenSkills, this.porcentajeSkills);
+    const skll = new Skills(this.nombreSkills, this.imagenSkills, this.porcentajeSkills, this.colorPrimarioSkills, this.colorSecundarioSkills);
     this.skillsS.save(skll).subscribe(data => {
       alert("Skill añadido");
       this.router.navigate(['']);

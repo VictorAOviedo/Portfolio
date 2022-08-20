@@ -13,7 +13,7 @@
                     <label for="fechaExp">
                         <h3>Fecha</h3>
                     </label>
-                    <input type="date" class="form-control" id="fechaExp" name="fechaExp" [(ngModel)]="expLab.fechaExp"
+                    <input type="month" class="form-control" id="fechaExp" name="fechaExp" [(ngModel)]="expLab.fechaExp"
                         required>
                 </div>
                 <div class="form-group">
@@ -23,10 +23,10 @@
                     <textarea class="form-control" id="descripcionExp" name="descripcionExp" placeholder="Descripción"
                         rows="7" [(ngModel)]="expLab.descripcionExp" required></textarea>
                 </div>
-                <button class="btn btn-success">
+                <button type="submit" class="btn btn-success">
                     Actualizar
                 </button>
-                <button class="btn btn-danger" routerLink="">
+                <button type="button" class="btn btn-danger" routerLink="">
                     Cancelar
                 </button>
             </form>
