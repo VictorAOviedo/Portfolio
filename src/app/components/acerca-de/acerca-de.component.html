@@ -1,5 +1,5 @@
 <div class="container">
-    <div class="row acercaDe">
+    <div class="row acercaDe" *ngFor="let persona of Persona">
         <div class="col text-center acercaDe__persona">
             <div><a name="acerca-de-mi"></a></div>
             <img src="../../../assets/perfil.jpg" alt="foto de perfil" class="acercaDe__persona__fotoPerfil">
@@ -11,5 +11,9 @@
             <p>{{persona.descripcion}}</p>
             <img src="../../../assets/dev03.png" class="acercaDe__descripcion__imagen" alt="developer">
         </div>
+        <!-- boton Nueva Educacion -->
+    <button type="button" class="btn btn-outline-success" routerLink="editpersona/{{persona.id}}" *ngIf="isLogged">
+        Editar Persona
+    </button>
     </div>
 </div>

@@ -1,0 +1,25 @@
+.formulario {
+    padding: 7rem;
+}
+
+.form-group {
+    margin: 1rem 0;
+}
+
+button {
+    margin: 2px;
+}
+
+@media (max-width: 768px) {
+    .formulario {
+        padding: 15px;
+    }
+
+    .form-group {
+        margin: 3rem 0 0 0;
+    }
+
+    .botonera {
+        padding: 1rem 0;
+    }
+}
