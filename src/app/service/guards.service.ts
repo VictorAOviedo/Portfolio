@@ -16,6 +16,7 @@ export class GuardsService implements CanActivate{
       return true;
     }
     this.router.navigate(['/login']);
+    alert("Debes Iniciar Sesión para acceder");
     return false; 
   }
 }
