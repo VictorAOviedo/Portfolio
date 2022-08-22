@@ -3,7 +3,8 @@
     border: solid;
     margin: 20px;
     border-radius: 0px 50px 0px 50px;
-    box-shadow: 1px 1px 20px 2px
+    box-shadow: 1px 1px 20px 2px;
+    background: rgba(244, 244, 244, 0.8);
 }
 
 .areaEducacion__titulo{

@@ -4,7 +4,7 @@
     margin: 20px;
     border-radius: 0px 50px 0px 50px;
     box-shadow: 1px 1px 20px 2px;
-    background: white;
+    background: rgba(244, 244, 244, 0.8);
 }
 .acercaDe__persona__fotoPerfil{
     width: 60%;
