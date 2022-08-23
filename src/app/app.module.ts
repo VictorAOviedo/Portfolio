@@ -25,6 +25,7 @@ import { EditSkillsComponent } from './components/hys-skills/edit-skills/edit-sk
 import { NewProyectoComponent } from './components/proyectos/new-proyecto/new-proyecto.component';
 import { EditProyectoComponent } from './components/proyectos/edit-proyecto/edit-proyecto.component';
 import { interceptorProvider } from './service/interteptor-service';
+import { EditPersonaComponent } from './components/acerca-de/edit-persona/edit-persona.component';
 
 
 @NgModule({
@@ -49,6 +50,7 @@ import { interceptorProvider } from './service/interteptor-service';
     EditSkillsComponent,
     NewProyectoComponent,
     EditProyectoComponent,
+    EditPersonaComponent,
   ],
   imports: [
     BrowserModule,

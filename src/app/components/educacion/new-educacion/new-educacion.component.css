@@ -1,17 +1,26 @@
-.formulario{
-   padding: 10rem;
+.container{
+    width:100vw;
+    height:100vh;
 }
 
-.form-group{
+.formulario {
+    padding: 5rem;
+}
+
+.form-group {
     margin: 1rem 0;
 }
 
-button{
+button {
     margin: 2px;
 }
 
-@media (max-width: 768px){
-    .formulario{
+@media (max-width: 768px) {
+    .formulario {
         padding: 15px;
-     }
+    }
+
+    .botonera {
+        padding: 1rem 0;
+    }
 }

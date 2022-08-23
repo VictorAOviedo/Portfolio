@@ -3,32 +3,34 @@
         <div class="formulario">
             <form (ngSubmit)="onCreate()" novalidate #f="ngForm">
                 <div class="form-group">
-                    <label for="nombreEdu">
+                    <label class="text-light bg-dark" for="nombreEdu">
                         <h3>Nombre de la educación</h3>
                     </label>
                     <input type="text" class="form-control" id="nombreEdu" name="nombreEdu"
                         placeholder="Nombre de la educación" [(ngModel)]="nombreEdu" required>
                 </div>
                 <div class="form-group col-9 col-sm-3 col-md-3 col-lg3 col-xl-3 col-xxl-3">
-                    <label for="fechaEdu">
+                    <label class="text-light bg-dark" for="fechaEdu">
                         <h3>Fecha</h3>
                     </label>
                     <input type="month" class="form-control" id="fechaEdu" name="fechaEdu" [(ngModel)]="fechaEdu"
                         required>
                 </div>
                 <div class="form-group">
-                    <label for="descripcionEdu">
+                    <label class="text-light bg-dark" for="descripcionEdu">
                         <h3>Descripción</h3>
                     </label>
                     <textarea class="form-control" id="descripcionEdu" name="descripcionEdu" placeholder="Descripción"
                         rows="7" [(ngModel)]="descripcionEdu" required></textarea>
                 </div>
-                <button type="submit" class="btn btn-success">
-                    Agregar Educacion
-                </button>
-                <button type="button" class="btn btn-danger" routerLink="">
-                    Cancelar
-                </button>
+                <div class="botonera">
+                    <button type="submit" class="btn btn-success">
+                        Agregar Educacion
+                    </button>
+                    <button type="button" class="btn btn-danger" routerLink="">
+                        Cancelar
+                    </button>
+                </div>
             </form>
         </div>
     </div>

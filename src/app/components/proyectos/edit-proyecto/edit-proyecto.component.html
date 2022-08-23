@@ -3,28 +3,28 @@
         <div class="formulario">
             <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
                 <div class="form-group">
-                    <label for="nombrePro">
+                    <label class="text-light bg-dark" for="nombrePro">
                         <h3>Nombre del proyecto</h3>
                     </label>
                     <input type="text" class="form-control" id="nombrePro" name="nombrePro"
                         placeholder="Nombre del proyecto" [(ngModel)]="pro.nombrePro" required>
                 </div>
                 <div class="form-group">
-                    <label for="descripcionPro">
+                    <label class="text-light bg-dark" for="descripcionPro">
                         <h3>Descripción</h3>
                     </label>
                     <textarea class="form-control" id="descripcionPro" name="descripcionPro" placeholder="Descripción"
                         rows="7" [(ngModel)]="pro.descripcionPro" required></textarea>
                 </div>
                 <div class="form-group">
-                    <label for="urlPro">
+                    <label class="text-light bg-dark" for="urlPro">
                         <h3>URL del proyecto</h3>
                     </label>
                     <input type="text" class="form-control" id="urlPro" name="urlPro"
                         placeholder="URL del proyecto" [(ngModel)]="pro.urlPro" required>
                 </div>
                 <div class="form-group">
-                    <label for="imgPro">
+                    <label class="text-light bg-dark" for="imgPro">
                         <h3>Imagen del proyecto</h3>
                     </label>
                     <input type="text" class="form-control" id="imgPro" name="imgPro"

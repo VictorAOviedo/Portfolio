@@ -3,36 +3,36 @@
         <div class="formulario">
             <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
                 <div class="form-group">
-                    <label for="nombreSkills">
+                    <label class="text-light bg-dark" for="nombreSkills">
                         <h3>Nombre de Hard & Soft Skills</h3>
                     </label>
                     <input type="text" class="form-control" id="nombreSkills" name="nombreSkills"
                         placeholder="Nombre de Hard & Soft Skills" [(ngModel)]="skll.nombreSkills" required>
                 </div>
                 <div class="form-group col-9 col-sm-3 col-md-3 col-lg3 col-xl-3 col-xxl-3">
-                    <label for="imagenSkills">
+                    <label class="text-light bg-dark" for="imagenSkills">
                         <h3>Imagen</h3>
                     </label>
                     <input type="url" class="form-control" id="imagenSkills" name="imagenSkills"
                         placeholder="URL de imagen" [(ngModel)]="skll.imagenSkills" required>
                 </div>
                 <div class="form-group col-9 col-sm-3 col-md-3 col-lg3 col-xl-3 col-xxl-3">
-                    <label for="porcentajeSkills">
+                    <label class="text-light bg-dark" for="porcentajeSkills">
                         <h3>Porcentaje</h3>
                     </label>
                     <input type="number" class="form-control" id="porcentajeSkills" name="porcentajeSkills" min="0"
                         max="100" rows="7" [(ngModel)]="skll.porcentajeSkills" required>
                 </div>
                 <div class="form-group col-9 col-sm-3 col-md-3 col-lg3 col-xl-3 col-xxl-3">
-                    <label for="colorPrimarioSkills">
-                        <h3>Color Primario</h3>
+                    <label class="text-light bg-dark" for="colorPrimarioSkills">
+                        <h3>Color de porcentaje</h3>
                     </label>
                     <input type="color" class="form-control form-control-color" id="colorPrimarioSkills"
                         name="colorPrimarioSkills" [(ngModel)]="skll.colorPrimarioSkills" required>
                 </div>
                 <div class="form-group">
-                    <label for="colorSecundarioSkills">
-                        <h3>Color Secundario</h3>
+                    <label class="text-light bg-dark" for="colorSecundarioSkills">
+                        <h3>Color interno</h3>
                     </label>
                     <input type="color" class="form-control form-control-color" id="colorSecundarioSkills"
                         name="colorSecundarioSkills" [(ngModel)]="skll.colorSecundarioSkills" required>

@@ -1,5 +1,10 @@
+.container{
+    width:100vw;
+    height:100vh;
+}
+
 .formulario {
-    padding: 10rem;
+    padding: 5rem;
 }
 
 .form-group {
@@ -13,5 +18,9 @@ button {
 @media (max-width: 768px) {
     .formulario {
         padding: 15px;
+    }
+
+    .botonera {
+        padding: 1rem 0;
     }
 }
