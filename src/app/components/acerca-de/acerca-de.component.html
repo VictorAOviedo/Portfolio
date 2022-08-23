@@ -2,7 +2,7 @@
     <div class="row acercaDe" *ngFor="let persona of Persona">
         <div class="col text-center acercaDe__persona">
             <div><a name="acerca-de-mi"></a></div>
-            <img src="../../../assets/perfil.jpg" alt="foto de perfil" class="acercaDe__persona__fotoPerfil">
+            <img src="{{persona.imagen}}" alt="foto de perfil" class="acercaDe__persona__fotoPerfil">
             <h3>{{persona.nombre}} {{persona.apellido}}</h3>
             <h5>{{persona.titulo}}</h5>
         </div>
