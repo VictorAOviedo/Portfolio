@@ -1,48 +1,35 @@
 <div class="areaHySS">
-    <h1 class="areaHySS__titulo">Hard & Soft Skills</h1>
-    <div class="col-lg-2">
-        <!-- boton Nueva Hard & Soft Skills -->
-        <button type="button" class="btn btn-outline-success" routerLink="/nuevaskills" *ngIf="isLogged">
-            Nueva Hard & Soft Skills
-        </button>
-    </div>
-    <div class="row">
-        <div *ngFor="let Skills of skills">
-            <div class="row">
-                <div class="areaHySS__nombreSkills col col-md-4 d-flex justify-content-center">
-                    <p>{{ Skills.nombreSkills }}</p>
-                </div>
-
-                <div class="col col-md-4 col-lg-4 col-xl-4 col-xxl-2 d-flex justify-content-start">
-
-                    <circle-progress 
-                    [percent]="Skills.porcentajeSkills" 
-                    [radius]="80"                   
-                    [showImage]="true" 
-                    [imageWidth]="100" 
-                    [imageHeight]="100" 
-                    [outerStrokeWidth]="16"
-                    [innerStrokeWidth]="8" 
-                    [outerStrokeColor]="Skills.colorPrimarioSkills" 
-                    [innerStrokeColor]="Skills.colorSecundarioSkills"
-                    [imageSrc]="Skills.imagenSkills"
-                    [animation]="true" 
-                    [animationDuration]="1200">
-                    </circle-progress>
-                </div>
-
-                <div class="areaHySS__botonesEditarEliminar col d-flex justify-content-start" *ngIf="isLogged">
-                    <!-- boton Editar -->
-                    <button class="btn btn-success" routerLink="/editskills/{{Skills.id}}">
-                        <i class="bi bi-pen"></i>
-                    </button>
-                    <!-- boton Eliminar -->
-                    <button class="btn btn-danger" (click)="delete(Skills.id)">
-                        <i class="bi bi-trash3"></i>
-                    </button>
-                </div>
-
+  <h1 class="areaHySS__titulo">Hard & Soft Skills</h1>
+  <div class="col-lg-2">
+    <!-- boton Nueva Hard & Soft Skills -->
+    <button type="button" class="btn btn-outline-success" routerLink="/nuevaskills" *ngIf="isLogged">
+      Nueva Hard & Soft Skills
+    </button>
+  </div>
+  <div class="row row-cols-1 row-cols-md-3 g-4 mx-5 mt-2 fuenteG">
+    <div *ngFor="let Skills of skills">
+      <div class="col text-center">
+        <div class="container">
+          <div class="position-relative">
+            <p class="areaHySS__nombreSkills">{{ Skills.nombreSkills }}</p>
+            <div *ngIf="isLogged" class="text-md-end text-center position-absolute top-0 end-0">
+              <!--boton Editar -->
+              <button class="btn btn-success" routerLink="/editskills/{{Skills.id}}">
+                <i class="bi bi-pen"></i>
+              </button>
+              <!-- boton Eliminar -->
+              <button class="btn btn-danger" (click)="delete(Skills.id)">
+                <i class="bi bi-trash3"></i>
+              </button>
             </div>
+          </div>
+          <circle-progress [percent]="Skills.porcentajeSkills" [radius]="80" [showImage]="true" [imageWidth]="100"
+            [imageHeight]="100" [outerStrokeWidth]="16" [innerStrokeWidth]="8"
+            [outerStrokeColor]="Skills.colorPrimarioSkills" [innerStrokeColor]="Skills.colorSecundarioSkills"
+            [imageSrc]="Skills.imagenSkills" [animation]="true" [animationDuration]="1200">
+          </circle-progress>
         </div>
+      </div>
     </div>
+  </div>
 </div>
