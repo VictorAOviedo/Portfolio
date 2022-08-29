@@ -6,7 +6,7 @@
       Nueva Hard & Soft Skills
     </button>
   </div>
-  <div class="row row-cols-1 row-cols-md-3">
+  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-3 row-cols-xl-4 row-cols-xxl-4">
     <div *ngFor="let Skills of skills">
       <div class="col text-center">
         <div class="container">
@@ -14,15 +14,13 @@
             <div class="col">
               <p class="areaHySS__nombreSkills">{{ Skills.nombreSkills }}</p>
             </div>
-            <div *ngIf="isLogged" class="text-md-end text-center position-absolute top-0 end-0">
-            </div>
           </div>
           <circle-progress [percent]="Skills.porcentajeSkills" [radius]="80" [showImage]="true" [imageWidth]="100"
             [imageHeight]="100" [outerStrokeWidth]="16" [innerStrokeWidth]="8"
             [outerStrokeColor]="Skills.colorPrimarioSkills" [innerStrokeColor]="Skills.colorSecundarioSkills"
             [imageSrc]="Skills.imagenSkills" [animation]="true" [animationDuration]="1200">
           </circle-progress>
-          <div class="col">
+          <div *ngIf="isLogged" class="col">
             <!--boton Editar -->
             <button class="btn btn-success" routerLink="/editskills/{{Skills.id}}">
               <i class="bi bi-pen"></i>

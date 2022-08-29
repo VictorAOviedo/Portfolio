@@ -1,13 +1,13 @@
-.row{
+.row {
     display: flex;
     align-items: center;
 }
 
-.navegacion__logoAP{
+.navegacion__logoAP {
     width: 30%;
 }
 
-.navegacion__redesSociales{
+.navegacion__redesSociales {
     width: 10%;
     float: right;
     border-radius: 100%;
@@ -15,24 +15,31 @@
     transition: width .5s;
 }
 
-.navegacion__login{
+.navegacion__login {
     text-align: center;
 }
 
-@media (max-width: 650px){
-    .navegacion__logoAP{
+@media (max-width: 650px) {
+    .navegacion__logoAP {
         width: 100%;
     }
-    .navegacion__redesSociales{
-        width: 25%;
+
+    .navegacion__redesSociales {
+        width: 33%;
     }
-    .navegacion__login{
+
+    .navegacion__login {
         float: left;
     }
 }
 
-@media (min-width: 768px){
-    .navegacion__redesSociales:hover{
+@media (min-width: 769px) {
+    .row {
+        position: fixed;
+        z-index: 10;
+    }
+
+    .navegacion__redesSociales:hover {
         width: 12%;
         border: 1px solid white;
         box-shadow: 1px 1px 20px 2px;

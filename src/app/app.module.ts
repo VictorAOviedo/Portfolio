@@ -12,7 +12,7 @@ import { NgCircleProgressModule } from 'ng-circle-progress';
 import { HysSkillsComponent } from './components/hys-skills/hys-skills.component';
 import { ProyectosComponent } from './components/proyectos/proyectos.component';
 import { FooterComponent } from './components/footer/footer.component';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { HomeComponent } from './components/home/home.component';
 import { LoginComponent } from './components/login/login.component';
 import { FormsModule } from '@angular/forms';
@@ -26,6 +26,8 @@ import { NewProyectoComponent } from './components/proyectos/new-proyecto/new-pr
 import { EditProyectoComponent } from './components/proyectos/edit-proyecto/edit-proyecto.component';
 import { interceptorProvider } from './service/interteptor-service';
 import { EditPersonaComponent } from './components/acerca-de/edit-persona/edit-persona.component';
+import { SpinnerComponent } from './components/spinner/spinner.component';
+import { interceptorSpinner, SpinnerInterceptor } from './components/spinner/spinner.interceptor';
 
 
 @NgModule({
@@ -51,6 +53,7 @@ import { EditPersonaComponent } from './components/acerca-de/edit-persona/edit-p
     NewProyectoComponent,
     EditProyectoComponent,
     EditPersonaComponent,
+    SpinnerComponent,
   ],
   imports: [
     BrowserModule,
@@ -59,7 +62,10 @@ import { EditPersonaComponent } from './components/acerca-de/edit-persona/edit-p
     HttpClientModule,
     FormsModule
   ],
-  providers: [interceptorProvider],
+  providers: [
+    interceptorSpinner,
+    interceptorProvider
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
