@@ -1,14 +1,21 @@
 .areaEducacion{
     padding: 20px;
-    border: solid;
     margin: 20px;
     border-radius: 0px 50px 0px 50px;
     box-shadow: 1px 1px 20px 2px;
-    background: rgba(244, 244, 244, 0.8);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    background-color: rgba(243, 243, 243, 0.4);
 }
 
 .areaEducacion__titulo{
     font-family: 'Righteous', cursive;
+    transition: 0.5s;
+}
+
+.areaEducacion:hover .areaEducacion__titulo {
+    color: #203ca0;
+    transition: 0.5s;
 }
 
 .areaEducacion__item{

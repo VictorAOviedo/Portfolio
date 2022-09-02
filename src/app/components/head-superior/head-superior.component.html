@@ -1,14 +1,68 @@
-<div class="row bg-dark text-white">
-        <div class="col navegacion">
-                <img src="../../../assets/AP_logoBlanco.png" class="navegacion__logoAP" alt="Logotipo de Argentina Programa">   
+<nav class="navbar navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="../../../assets/AP_logoBlanco.png" class="navbar__logoAP" alt="Logotipo de Argentina Programa"></a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+                        <span><i class="bi bi-list-task"></i></span>
+                </button>
+
+                <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+                        <div class="offcanvas-header">
+                                <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Victor Oviedo</h5>
+                                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                                        aria-label="Close"></button>
+                        </div>
+
+                        <div class="offcanvas-body">
+                                <div class="body__secciones">
+                                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                                <li class="nav-item">
+                                                        <a class="nav-link active" aria-current="page" href="#">Acerca
+                                                                de mi</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                        <a class="nav-link" href="#experiencia">Experiencia Laboral</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                        <a class="nav-link" href="#educacion">Educacion</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                        <a class="nav-link" href="#skills">Hard & Soft skills</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                        <a class="nav-link" href="#proyectos">Proyectos</a>
+                                                </li>
+                                        </ul>
+                                </div>
+
+                                <div class="body__contacto">
+                                        <div class="nav-item body__contacto__titulo">Contacto</div>
+                                        <div class="body__contacto__link">
+                                                <a href="https://github.com/VictorAOviedo" target="_blank"><img
+                                                                src="../../../assets/1github.jpg"
+                                                                class="body__contacto__link-redesSociales"
+                                                                alt="imagen Github"></a>
+
+                                                <a href="https://www.instagram.com/victor87o/" target="_blank"><img
+                                                                src="../../../assets/1instagram.png"
+                                                                class="body__contacto__link-redesSociales"
+                                                                alt="imagen Instagram"></a>
+
+                                                <a href="https://www.linkedin.com/in/victor-a-oviedo/"
+                                                        target="_blank"><img src="../../../assets/1linkedin.png"
+                                                                class="body__contacto__link-redesSociales"
+                                                                alt="imagenLinkedin"></a>
+                                        </div>
+                                </div>
+
+                                <div class="body__contacto__botonera">
+                                        <button type="button" class="btn btn-outline-light" data-bs-dismiss="offcanvas" (click)="login()"
+                                                *ngIf="!isLogged"><a>Iniciar Sesión</a></button>
+                                        <button type="button" class="btn btn-outline-light" (click)="onLogOut()"
+                                                *ngIf="isLogged"><a>Cerrar Sesión</a></button>
+                                </div>
+                        </div>
+                </div>
         </div>
-        <div class="col">
-                <a href="https://github.com/VictorAOviedo" target="_blank"><img src="../../../assets/1github.jpg" class="navegacion__redesSociales" alt="imagen Github"></a>
-                <a href="https://www.instagram.com/victor87o/" target="_blank"><img src="../../../assets/1instagram.png" class="navegacion__redesSociales" alt="imagen Instagram"></a> 
-                <a href="https://www.linkedin.com/in/victor-a-oviedo/" target="_blank"><img src="../../../assets/1linkedin.png" class="navegacion__redesSociales" alt="imagenLinkedin"></a>
-        </div>
-        <div class="col col-sm-2 col-md-2 col-lg-2 col-xl-2 col-xxl-2 navegacion__login">
-                        <button type="button" class="btn btn-outline-light" (click)="login()" *ngIf="!isLogged"><a>Login</a></button>
-                        <button type="button" class="btn btn-outline-light" (click)="onLogOut()" *ngIf="isLogged"><a>Cerrar Sesión</a></button>
-        </div>
-</div>
+</nav>

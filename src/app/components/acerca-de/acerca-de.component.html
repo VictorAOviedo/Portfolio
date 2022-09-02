@@ -2,9 +2,11 @@
     <div class="row acercaDe" *ngFor="let persona of Persona">
         <div class="col text-center acercaDe__persona">
             <div><a name="acerca-de-mi"></a></div>
-            <img src="{{persona.imagen}}" alt="foto de perfil" class="acercaDe__persona__fotoPerfil">
-            <h3>{{persona.nombre}} {{persona.apellido}}</h3>
-            <h5>{{persona.titulo}}</h5>
+            <div class="acercaDe__persona__tarjeta">
+                <img src="{{persona.imagen}}" alt="foto de perfil" class="acercaDe__persona__tarjeta--fotoPerfil">
+                <h3>{{persona.nombre}} {{persona.apellido}}</h3>
+                <h5>{{persona.titulo}}</h5>
+            </div>
         </div>
         <div class="col acercaDe__descripcion">
             <h1 class="acercaDe__descripcion__titulo">Acerca de mi</h1>
@@ -12,8 +14,8 @@
             <img src="../../../assets/dev03.png" class="acercaDe__descripcion__imagen" alt="developer">
         </div>
         <!-- boton Nueva Educacion -->
-    <button type="button" class="btn btn-outline-success" routerLink="editpersona/{{persona.id}}" *ngIf="isLogged">
-        Editar Persona
-    </button>
+        <button type="button" class="btn btn-success" routerLink="editpersona/{{persona.id}}" *ngIf="isLogged">
+            Editar Persona
+        </button>
     </div>
 </div>

@@ -1,3 +1,12 @@
 .container{
     background: rgba(0, 0, 0, 0.5);
 }
+
+.nav-item{
+    transition: 2.5s;
+}
+
+.nav-item:hover{
+    transition: 1s;
+    background-color: #203ca0;
+}

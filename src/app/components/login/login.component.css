@@ -11,3 +11,48 @@ button{
 h1{
     font-family: 'Righteous', cursive;
 }
+
+.formulario{
+    padding: 5rem 0;
+}
+
+.formulario___campo{
+    padding-top: 20px;
+    position: relative;
+}
+
+.formulario___campo__imput{
+    border: none;
+    outline: none;
+    border-bottom: 3px solid #fff;
+    padding: 8px 3px;
+    background: transparent;
+    transition: all .3s;
+    display: block;
+    width: 100%;
+    color: #fff;
+    font-size: 2rem;
+   
+}
+
+.formulario___campo__label{
+    position: absolute;
+    left: 0;
+    top: 20px;
+    color: gray;
+    padding: 8px 3px;
+    transition: all .3s;
+}
+
+.formulario___campo__imput:focus ~ .formulario___campo__label, .formulario___campo__imput:valid ~ .formulario___campo__label{
+    top: 0;
+    font-size: .8rem;
+}
+
+.formulario___campo__imput:focus ~ .formulario___campo__label{
+    color: #fff;
+}
+
+.formulario___campo__imput:focus{
+    border-bottom: 5px solid #203ca0;
+}
