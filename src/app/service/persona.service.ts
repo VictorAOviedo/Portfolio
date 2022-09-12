@@ -8,7 +8,8 @@ import { persona } from '../model/persona.model';
   providedIn: 'root'
 })
 export class PersonaService {
-  perURL = 'https://portfoliovao.herokuapp.com/persona/';
+  // perURL = 'https://portfoliovao.herokuapp.com/persona/';
+  perURL = 'http://localhost:8080/persona/';
 
   constructor(private httpClient: HttpClient) { }
 

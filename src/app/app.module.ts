@@ -28,6 +28,8 @@ import { interceptorProvider } from './service/interteptor-service';
 import { EditPersonaComponent } from './components/acerca-de/edit-persona/edit-persona.component';
 import { SpinnerComponent } from './components/spinner/spinner.component';
 import { interceptorSpinner, SpinnerInterceptor } from './components/spinner/spinner.interceptor';
+import { ProximamenteComponent } from './components/proyectos/proximamente/proximamente.component';
+
 
 
 @NgModule({
@@ -54,6 +56,7 @@ import { interceptorSpinner, SpinnerInterceptor } from './components/spinner/spi
     EditProyectoComponent,
     EditPersonaComponent,
     SpinnerComponent,
+    ProximamenteComponent,
   ],
   imports: [
     BrowserModule,

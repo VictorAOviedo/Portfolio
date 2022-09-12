@@ -22,8 +22,17 @@
     margin: 1rem 0;
 }
 
+.areaEducacion__item--descripcion{
+    padding-bottom: 1rem;
+}
+
+h5{
+    color: rgb(72, 71, 71);
+}
+
 .areaEducacion__item__botonesEditarEliminar{
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    padding-bottom: 5px;
 }

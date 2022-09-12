@@ -10,6 +10,13 @@
                         placeholder="Nombre de la experiencia" [(ngModel)]="expLab.nombreExp" required>
                 </div>
                 <div class="form-group col-9 col-sm-3 col-md-3 col-lg3 col-xl-3 col-xxl-3">
+                    <label class="text-light bg-dark" for="imagenExp">
+                        <h3>Imagen de la empresa</h3>
+                    </label>
+                    <input type="text" class="form-control" id="imagenExp" name="imagenExp"
+                        placeholder="URL de imagen de empresa" [(ngModel)]="expLab.imagenExp" required>
+                </div>
+                <div class="form-group col-9 col-sm-3 col-md-3 col-lg3 col-xl-3 col-xxl-3">
                     <label class="text-light bg-dark" for="fechaExp">
                         <h3>Fecha</h3>
                     </label>

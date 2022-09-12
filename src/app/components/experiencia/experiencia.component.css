@@ -13,17 +13,41 @@
     transition: 0.5s;
 }
 
+.areaExperiencia:hover .areaExperiencia__titulo {
+    color: #203ca0;
+    transition: 0.5s;
+}
+
 .areaExperiencia__item{
     margin: 1rem 0;
+}
+
+h5{
+    color: rgb(72, 71, 71);
+}
+
+.areaExperiencia__item--descripcion{
+    padding-bottom: 1rem;
 }
 
 .areaExperiencia__item__botonesEditarEliminar{
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    padding-bottom: 5px;
 }
 
-.areaExperiencia:hover .areaExperiencia__titulo {
-    color: #203ca0;
-    transition: 0.5s;
+@media (min-width: 1024px) {
+    #imagenEmpresa{
+        width: 50%;
+        height: auto;
+        padding: 0 0 1rem 0;
+    }   
+}
+
+@media (min-width: 2560px) {
+    #imagenEmpresa{
+        width: 30%;
+        height: auto;
+    }   
 }

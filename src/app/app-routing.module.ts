@@ -11,6 +11,7 @@ import { NewSkillsComponent } from './components/hys-skills/new-skills/new-skill
 import { LoginComponent } from './components/login/login.component';
 import { EditProyectoComponent } from './components/proyectos/edit-proyecto/edit-proyecto.component';
 import { NewProyectoComponent } from './components/proyectos/new-proyecto/new-proyecto.component';
+import { ProximamenteComponent } from './components/proyectos/proximamente/proximamente.component';
 import { GuardsService as guards} from './service/guards.service';
 
 
@@ -26,6 +27,7 @@ const routes: Routes = [
   {path: 'nuevopro', component: NewProyectoComponent, canActivate: [guards]},
   {path: 'editpro/:id', component: EditProyectoComponent, canActivate: [guards]},
   {path: 'editpersona/:id', component: EditPersonaComponent, canActivate: [guards]},
+  {path: 'proximamente', component: ProximamenteComponent},
 ];
 
 @NgModule({

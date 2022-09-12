@@ -27,3 +27,9 @@
     justify-content: flex-end;
     align-items: center;
 }
+
+@media (max-width: 767px) {
+      img{
+        border-radius: 6px;
+      }
+}
