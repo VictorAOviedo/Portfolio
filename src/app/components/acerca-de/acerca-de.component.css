@@ -14,7 +14,8 @@
 }
 
 .acercaDe__persona__tarjeta--fotoPerfil{
-    width: 80%;
+    width: 250px;
+    height: auto;
     border: solid;
     margin: 1px;
     border-radius: 0 50px 0 50px;
@@ -24,6 +25,7 @@
 h3{
     font-family: 'Secular One', sans-serif;
     transition: 5s;
+    margin-top: 2rem;
 }
 
 .acercaDe:hover h3 {
@@ -69,7 +71,7 @@ h5{
         padding: 0 0 2rem 0;
     }
     .acercaDe__persona__tarjeta--fotoPerfil{
-        width: 100%;
+        width: 150px;
         border-radius: 50%;
     }
 }
